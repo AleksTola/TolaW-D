@@ -1472,8 +1472,9 @@ function scrollToContactAndFillService(serviceId) {
     if (!serviceInput) {
         const newInputDiv = document.createElement('div');
         newInputDiv.innerHTML = `
-            <p style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; margin-bottom: 5px; color: rgb(0, 0, 0); font-weight: bold;">Service you're interested in</p>
-            <input name="service-input" id="service-input" class="inputi" value="${serviceId}">
+        <div id="w">
+            <p id="msg" style="font-family: Arial, Helvetica, sans-serif; font-size: 12px; margin-bottom: 5px; color: rgb(0, 0, 0); font-weight: bold;">Service you're interested in</p>
+            <input name="service-input" id="service-input" class="inputi" value="${serviceId}"></div>
         `;
         document.querySelector('.flex-input').appendChild(newInputDiv);
     } else {
